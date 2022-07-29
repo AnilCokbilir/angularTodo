@@ -11,14 +11,17 @@ import { AddNoteComponent } from './add-note/add-note.component';
 import { TrashComponent } from './trash/trash.component';
 import { ArchivComponent } from './archiv/archiv.component';
 import { MatInputModule } from '@angular/material/input';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { FetchApiComponent } from './fetch-api/fetch-api.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     AddNoteComponent,
     TrashComponent,
-    ArchivComponent
+    ArchivComponent,
+    FetchApiComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,8 @@ import { FormsModule } from '@angular/forms'
     MatToolbarModule,
     MatButtonModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
